@@ -8,9 +8,9 @@ connectDB();
 const app = express();
 app.use(express.json());
 
-// ✅ Test route for localhost
+//  Test route for localhost
 app.get("/", (req, res) => {
-  res.send("✅ TCN24 Backend is running on localhost!");
+  res.send(" TCN24 Backend is running on localhost!");
 });
 
 // API routes
