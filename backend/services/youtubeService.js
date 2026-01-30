@@ -6,7 +6,7 @@ const fetchYouTubeNews = async () => {
   const response = await axios.get(url, {
     params: {
       part: "snippet",
-      channelId: process.env.CHANNEL_ID,
+      channelId: process.env.CHANNEL_ID, 
       maxResults: 10,
       order: "date",
       type: "video",
