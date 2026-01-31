@@ -5,7 +5,7 @@ exports.getLatestNews = async (req, res) => {
     const videos = await fetchYouTubeNews();
 
     const formatted = videos.map((video) => ({
-      title: video.snippet.title,
+      title: video.snippet.title, 
       description: video.snippet.description,
       image: video.snippet.thumbnails.high.url,
       category: "YouTube News",
