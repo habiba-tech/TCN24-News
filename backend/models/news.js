@@ -7,7 +7,7 @@ const newsSchema = new mongoose.Schema(
     image: { type: String },
     category: { type: String, required: true },
     publishedAt: { type: Date },
-  },
+  }, 
   { timestamps: true }
 );
 
